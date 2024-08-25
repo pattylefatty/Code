@@ -1,0 +1,43 @@
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main(){
+    int hours, minutes, seconds;
+
+    while(true){
+        cout<<"Enter Hours: ";
+        cin>> hours;
+        cout<<"Enter Minutes: ";
+        cin>> minutes;
+        cout<<"Enter Seconds: ";
+        cin>> seconds;
+        
+    if(hours >= 0 || minutes >= 0 || seconds >= 0 || minutes < 60 || seconds < 60)
+        break;
+    } else {
+        cout<<"Error! Invalid input! Please try again!";
+    }
+    while(hours > 0 || minutes > 0 || seconds > 0);
+        system("cls");
+        cout<<"Time Remaining: ";
+            << hours << " : ";
+            << minutes << " : ";
+            << seconds << " : " endl;
+        Sleep(1000);
+
+    if(seconds > 0){
+        seconds --;
+    }
+    if(minutes > 0){
+        seconds 59;
+    }
+    if(hours > 0){
+        seconds 59;
+        minutes 59;
+        hours --;
+    }
+    cout<<"Your countdown is finished!!!"
+system("cls");
+}
